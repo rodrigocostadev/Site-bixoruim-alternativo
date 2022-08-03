@@ -138,7 +138,7 @@ a{
     align-items: center;
     /* background-color: rebeccapurple; */
     height: 600px;
-    margin-left: 50px;
+    margin-left: 0px;
     flex-direction: column;
     
     min-width: 400px;
