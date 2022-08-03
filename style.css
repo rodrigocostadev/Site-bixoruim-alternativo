@@ -1,0 +1,761 @@
+body, ul, li, ol, p, h2{
+    margin: 0;
+    padding: 0;    
+}
+a{
+    text-decoration: none;
+}
+#home{
+    position: sticky;
+    top: 20px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+
+
+
+/* PRE HEADER //////////////////////////////////////////////////////////////////////// */
+.preheader{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+.menuph{
+    display: flex;
+    list-style: none;
+    /* background-color: aqua; */
+}
+.logopng{
+    width: 160px;
+    height: 70px;
+}
+.icon{
+    width: 30px;
+    /* background-color: blue; */
+    padding: 5px;
+}
+.icon:hover, .dicons:hover, .icon2:hover, .icon3:hover{
+    transform: scale(1.3);
+    transition: 400ms;
+} 
+.copyheader{
+    font-size: 1.2rem;
+    /* background-color: rebeccapurple; */
+    width: 140px;
+    text-align: center;
+}
+.copyright{
+    color: black;
+    font-size: 15px;
+    font-family: 'Play', sans-serif;
+}
+.imgcopy{
+    width: 10px;
+}
+
+
+
+
+/* HEADER  //////////////////////////////////////////////////////////////////////////////////// */
+#sticky{
+    position: sticky;
+    top: 0px;
+    /* position: fixed; */
+}
+.header{
+    display: flex;
+    justify-content: center;
+    /* background-color: black; */
+    background-image: linear-gradient(to bottom, firebrick 10%,black );
+    padding: 10px;
+    position: sticky;
+    top: 0px;
+}
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 700px;    
+    height: 60px;
+    list-style: none;
+    /* background-color: yellow; */
+    width: 100%;
+    font-family: 'Play', sans-serif;
+    font-size: 20px;
+}
+.menu > li > a {
+    color: white;
+    /* background-color: firebrick; */
+    /* color: red; */
+    padding: 10px;
+    border-radius: 10px;
+}
+.menu > li > a:hover{
+    color: red;
+    transition: 600ms;
+}
+
+
+
+/* LOGO ////////////////////////////////////////////////////////////////////////////// */
+.logo{
+    /* background-color: black; */
+    background-image: url(assets/backgroundkse.jpg);
+    background-size: contain;
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+}
+.logo > img {
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    box-shadow: 0 0 20em black;
+}
+
+
+
+
+
+/* ALBUM //////////////////////////////////////////////////////////////////////////////////// */
+.album{                                     
+    margin-top: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    grid-column-gap: 50px;
+    flex-wrap: wrap;
+    font-family: 'Raleway', sans-serif;
+}
+.columnalbum{
+    display: flex;
+    align-content: space-around;
+    align-items: center;
+    /* background-color: rebeccapurple; */
+    height: 600px;
+    margin-left: 50px;
+    flex-direction: column;
+    
+    min-width: 400px;
+}
+.columnalbum > h2{
+    margin-top: 50px;
+}
+.columnalbum > p{
+    margin-top: 50px;
+}
+.albumlist{
+    margin-top: 50px;
+    display: grid;
+    /* background-color: yellow; */
+    text-align: start;
+    justify-items: center;
+    min-width: 200px;
+    height: 300px;
+}
+.imgalbum{
+    width: 600px;
+    min-width: 200px;
+    flex-wrap: wrap;
+}
+
+/* .album{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 50px;
+    grid-column-gap: 50px;
+    
+}
+.columnalbum{
+    display: grid;
+    align-content: space-around;
+    background-color: rebeccapurple;
+    height: 600px;
+    margin-left: 50px;
+}
+.albumlist{
+    display: grid;
+    background-color: yellow;
+    text-align: start;
+    justify-items: center;
+    min-width: 200px;
+    height: 300px;
+}
+.imgalbum{
+    width: 600px;
+    min-width: 100px;
+} */
+
+
+
+
+/* LISTEN /////////////////////////////////////////////////////////////////////////////// */
+.title{
+    margin-top: 50px;
+    text-align: center;
+    /* background-color: red; */
+    padding: 30px;
+    margin-bottom: 50px;
+    font-family: 'Play', sans-serif;
+    font-size: 2.4rem;
+}
+.listen{
+    display: flex;
+    justify-content: space-around;
+    /* background-color: green; */
+    align-items: center;
+}
+.dicons{
+    width: 100px;
+    height: 100px;
+    /* background-color: royalblue; */
+    margin-right: 20px;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+
+
+
+/* MARKETPLACE ///////////////////////////////////////////////////////////////////////////// */
+.marketplace{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+.womanimg{
+    width: 250px;
+    height: 400px;
+}
+.imgmkt{
+    width: 300px;
+    height: 300px;
+}
+.admkt{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+/* .admkt > input{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Play', sans-serif;
+    font-size: 20px;
+    padding: 5px;
+} */
+.compreaqui{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Play', sans-serif;
+    font-size: 20px;
+    padding: 5px;
+}
+.compreaqui:hover{
+    transform: scale(1.2);
+    transition: 400ms;
+} 
+
+
+
+
+
+/* VIDEO ////////////////////////////////////////////////////////////////////////////////////// */  /* FAZER MEDIA QUERY */
+.video{
+    /* background-color: black; */
+    background-image: url(assets/backgroundkse.jpg);
+    background-size: contain;
+    justify-content: center;
+    display: flex;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+#video1{
+    width: 1200px;
+    height: 600px;
+    margin: auto;
+    padding-bottom: 50px;
+}
+.titlevideo{
+    text-align: center;
+    color: white;
+    padding: 50px;
+    /* background-color: greenyellow; */
+    margin-bottom: 50px;
+    font-family: 'Play', sans-serif;
+    font-size: 3rem;
+}
+
+
+
+
+/* FOTOS /////////////////////////////////////////////////////////////////////////////////////////// */
+.fotos{
+    background-image: url(assets/backgroundkse2.jpg);
+    background-size: contain;
+}
+.fotos2{
+    display: grid;
+    grid-template: auto auto auto auto / auto auto;
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
+    grid-row-gap: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.titlefotos{
+    text-align: center;
+    color: black;
+    padding: 50px;
+    /* background-color: greenyellow; */
+    margin-bottom: 50px;
+    font-family: 'Play', sans-serif;
+    font-size: 3rem;
+}
+.fotos2 > img{
+    width: 50%;  
+    max-width: 600px;
+}
+
+
+
+
+/* AGENDA ////////////////////////////////////////////////////////////////////////////////////////////// FAZER MEDIAQUERY*/
+.agenda{
+    background-image: url(assets/BixoRuim.jpg);
+    /* background-size: 48%;  */
+    background-size: cover;
+    background-position: 0px ;
+}
+.agenda2{
+    display: grid;
+    grid-template-columns: 100px 200px 130px;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    padding-bottom: 50px;
+    font-family: 'Raleway', sans-serif; 
+    font-size: 1.4rem;   
+}
+.agenda > h2 {
+    color: white;
+    margin-bottom: 50px;
+    align-self: flex-start;
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Play', sans-serif;
+    font-size: 3rem;
+}
+.tituloagenda{
+    margin-bottom: 50px;
+    font-size: 1.4rem;
+}
+.data{
+    list-style: none;
+    color: white;
+    /* background-color: blue; */
+}
+.data > li:nth-child(n+2){
+    margin-bottom: 10px;
+}
+.cidade{
+    color: white;
+    list-style: none;
+    /* background-color: blue; */
+}
+.cidade > li:nth-child(n+2){
+    margin-bottom: 10px;
+}
+.local{
+    color: white;
+    list-style: none;
+    /* background-color: blue; */
+}
+.local > li:nth-child(n+2){
+    margin-bottom: 10px;
+}
+
+
+
+
+/* HISTORIA /////////////////////////////////////////////////////////////////////// */
+.historia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    /* background-color: black; */
+    background-image: url(assets/backgroundkse2.jpg);
+    background-size: contain;
+    padding-bottom: 50px;
+}
+.titlehistoria{
+    text-align: center;
+    color: black;
+    padding: 50px;
+    /* background-color: greenyellow; */
+    margin-bottom: 50px;
+    font-family: 'Play', sans-serif;
+    font-size: 3rem;
+    /* text-align: center;
+    padding: 30px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: white; */
+}
+.historia > img{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.paragrafohistoria{                           /*  /////////////////////////////////////////// FAZER MEDIA QUERY */
+    font-size: 1.2rem;
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    /* background-color: aqua; */
+    flex-shrink: 1;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+
+/* INSCREVER //////////////////////////////////////////////////////////////////////////////////////////////////// */
+.inscrever{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    background-image: linear-gradient(to bottom, white 30%, black);
+}
+.email{
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    /* background-color: gray; */
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.email > input{
+    width: 70%;
+    margin-bottom: 5px;
+}
+.email > h2{
+    margin-bottom: 10px;
+    font-family: 'Play', sans-serif;
+}
+.btn{
+    display: block;
+    width: 73%;
+    padding: 5px;
+    font-family: 'Play', sans-serif;
+}
+.input{
+    padding: 5px;
+}
+.pinscrever{
+    width: 60%;
+    margin-top: 40px;
+    font-size: 1.2rem;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.inssection{
+    text-align: center;
+    /* background-color: aqua; */
+    font-size: 1.5rem;
+    font-family: 'Play', sans-serif;
+}
+.icon2{
+    width: 50px;
+    padding: 10px;
+    /* background-color: red; */
+    margin: 10px;
+}
+
+
+
+
+/* FOOTER //////////////////////////////////////////////////////////////////////////////////////////////////// */
+.footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 1.3rem;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'Play', sans-serif;
+}
+.icon3{
+    margin-left: 40px;
+    margin-top: 30px;
+    width: 30px;
+}
+.dev{
+    margin-top: 70px;
+}
+
+
+
+/* MEDIA QUERY VIDEO ///////////////////////////////////////////////////////////////////// */
+@media (max-width:1300px){
+    #video1{
+        width: 1000px;
+        height: 500px;
+    }
+}
+
+@media (max-width:1100px){
+    #video1{
+        width: 900px;
+        height: 500px;
+    }
+}
+
+@media (max-width:990px){
+    #video1{
+        width: 900px;
+        height: 500px;
+    }
+}
+
+@media (max-width:970px){
+    #video1{
+        width: 850px;
+        height: 400px;
+    }
+}
+
+@media (max-width:920px){
+    #video1{
+        width: 700px;
+        height: 400px;
+    }
+}
+
+@media (max-width:770px){
+    #video1{
+        width: 600px;
+        height: 300px;
+    }
+}
+
+@media (max-width:680px){
+    #video1{
+        width: 500px;
+        height: 200px;
+    }
+}
+
+@media (max-width:600px){
+    #video1{
+        width: 400px;
+        height: 200px;
+    }
+
+    .titlevideo{
+        text-align: center;
+        color: white;
+        padding: 30px;
+        /* background-color: greenyellow; */
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width:500px){
+    #video1{
+        width: 300px;
+        height: 200px;
+    }
+}
+
+
+/* MEDIA QUERY HEADER E PREHEADER //////////////////////////////////////////////////////////////////////// */
+@media (max-width:900px){
+    .menu{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 700px;    
+        height: 60px;
+        list-style: none;
+        /* background-color: yellow; */
+        width: 100%;
+        font-family: 'Play', sans-serif;
+        font-size: 15px;
+    }
+}
+@media (max-width:730px){
+    .preheader{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+    }
+    .menuph{
+        display: flex;
+        list-style: none;
+        /* background-color: aqua; */
+    }
+    .logopng{
+        width: 140px;
+        height: 60px;
+    }
+    .icon{
+        width: 20px;
+        /* background-color: blue; */
+        padding: 5px;
+    }
+    .copyheader{
+        /* background-color: rebeccapurple; */
+        width: 140px;
+        text-align: center;
+    }
+    .copyright{
+        font-size: 10px;
+    }
+    .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: black; */
+        background-image: linear-gradient(to bottom, firebrick 10%,black );
+        padding: 10px;
+        height: 40px;
+    }
+    .menu{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        /* width: 700px;     */
+        height: 60px;
+        list-style: none;
+        /* background-color: yellow; */
+        width: 100%;
+        font-family: 'Play', sans-serif;
+        font-size: 10px;
+    }
+    .menu > li > a {
+        color: white;
+        /* background-color: firebrick; */
+        /* padding: 10px; */
+        /* border-radius: 10px; */
+    }
+}
+@media (max-width:600px){
+    .logopng{
+        width: 100px;
+        height: 40px;
+    }
+    .icon{
+        width: 10px;
+        /* background-color: blue; */
+        padding: 5px;
+    }
+    .copyheader{
+        /* background-color: rebeccapurple; */
+        width: 40px;
+        text-align: center;
+    }
+    .copyright{
+        font-size: 8px;
+    }
+    .menu{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        /* width: 700px;     */
+        height: 60px;
+        list-style: none;
+        /* background-color: yellow; */
+        width: 100%;
+        font-family: 'Play', sans-serif;
+        font-size: 8px;
+    }
+    .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: black; */
+        background-image: linear-gradient(to bottom, firebrick 10%,black );
+        padding: 10px;
+        height: 30px;
+    }
+}
+
+
+/* MEDIA QUERY AGENDA ////////////////////////////////////////////////////////////////////////////// */
+@media (max-width:650px){
+    .agenda{
+        background-image: url(assets/BixoRuim.jpg);
+        /* background-size: 100%;     */
+    }
+    .agenda2{
+        display: grid;
+        grid-template-columns: 100px 200px 130px;
+        grid-template-rows: auto auto;
+        justify-content: center;
+        padding-bottom: 50px;
+        font-family: 'Raleway', sans-serif; 
+        font-size: 1.2rem;   
+    }
+    /* .agenda > h2 {
+        color: RED;
+        margin-bottom: 50px;
+        align-self: flex-start;
+        text-align: center;
+        padding-top: 50px;
+        font-family: 'Play', sans-serif;
+        font-size: 3rem;
+    } */
+}
+@media (max-width:500px){
+    .agenda2{
+        display: grid;
+        grid-template-columns: 70px 170px 100px;
+        grid-template-rows: auto auto;
+        font-size: 1rem;
+    }
+}
+
+
+
+/* OUÇA AGORA / DOWNLOAD //////////////////////////////////////////////////////////////////////////////////// */
+@media (max-width:500px){
+    .dicons{
+        width: 60px;
+        height: 60px;
+        /* background-color: royalblue; */
+        margin-right: 20px;
+        padding: 10px;
+        margin-bottom: 50px;
+    }
+}
+
+
+
+/* FOOTER ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+@media (max-width:500px){
+    .icon2{
+        
+        width: 30px;
+        padding: 10px;
+        /* background-color: red; */
+        margin: 10px;    
+    }
+}
