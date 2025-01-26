@@ -13,7 +13,9 @@ a{
     margin-top: 20px;
 }
 
-
+html{
+    scroll-behavior: smooth;
+}
 
 
 /* PRE HEADER //////////////////////////////////////////////////////////////////////// */
@@ -302,11 +304,13 @@ a{
 
 
 /* FOTOS /////////////////////////////////////////////////////////////////////////////////////////// */
+
 .fotos{
     background-image: url(assets/backgroundkse2.jpg);
     background-size: contain;
+    padding-bottom: 20px;
 }
-.fotos2{
+/* .fotos2{
     display: grid;
     grid-template: auto auto auto auto / auto auto;
     justify-content: center;
@@ -315,7 +319,8 @@ a{
     grid-row-gap: 10px;
     padding-top: 50px;
     padding-bottom: 50px;
-}
+} */
+
 .titlefotos{
     text-align: center;
     color: black;
@@ -325,15 +330,69 @@ a{
     font-family: 'Play', sans-serif;
     font-size: 3rem;
 }
-.fotos2 > img{
+/* .fotos2 > img{
     width: 50%;  
     max-width: 600px;
+} */
+
+/* SLIDE DE FOTOS */
+#div-slider{
+    width: 70%;
+    height: 800px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    /* background-color: firebrick; */
+    margin: auto;
+}
+.slides{
+    /* margin-left: 5%;
+    margin-right: 5%; */
+    height: 80%;
+    /* width: 100%; */
+    /* background-repeat: no-repeat; */
+    /* opacity: 0.1; */
+    /* background-color: aqua; */
+}
+/* #overlay{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1;
+} */
+ .dark-image{    
+    filter: brightness(5%);
+    transition: filter 0.5s ease;
+    /* transition: opacity 1s;
+    opacity: 0;
+    z-index: 1; */
+    /* transition: opacity 1s ease; */
+ }
+#buttons-slide{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.arrows{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arrow{
+    width: 30px;
+}
+.arrow:hover{
+    transform: scale(1.4);
+    transition: 300ms;
+    cursor: pointer;
 }
 
 
 
 
-/* AGENDA ////////////////////////////////////////////////////////////////////////////////////////////// FAZER MEDIAQUERY*/
+/* AGENDA ////////////////////////////////////////////////////////////////////////////////////////////// */
 .agenda{
     background-image: url(assets/BixoRuim.jpg);
     /* background-size: 48%;  */
@@ -420,7 +479,7 @@ a{
     margin: auto;
     margin-bottom: 50px;
 }
-.paragrafohistoria{                           /*  /////////////////////////////////////////// FAZER MEDIA QUERY */
+.paragrafohistoria{                           /*  /////////////////////////////////////////// */
     font-size: 1.2rem;
     width: 60%;
     height: 100%;
@@ -699,6 +758,26 @@ a{
 }
 
 
+/* MEDIA QUERY FOTOS ////////////////////////////////////////////////////////////////////////////// */
+@media screen and (max-width:750px){
+
+    #div-slider{
+        gap: 25px;
+
+    }
+
+    /* ABAIXO NÃO ESTA FUNCIONANDO A MUDANÇA DE ALTURA */
+    /* .slides{
+        height: 30%;
+    }
+
+    .arrows{
+        background-color: red;
+    } */
+}
+
+
+
 /* MEDIA QUERY AGENDA ////////////////////////////////////////////////////////////////////////////// */
 @media (max-width:650px){
     .agenda{
@@ -759,3 +838,119 @@ a{
         margin: 10px;    
     }
 }
+
+
+
+
+
+/* TESTE VIDEO SUJEITO PROGRAMADOR ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* .slider{
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+.slide img{
+    width: 800px;
+} */
+
+/* botoes circulares de imagem */
+/* .manual-navigation{
+    position: relative;
+    width: 800px;
+    margin: auto;
+    margin-top: -40px;    
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+} */
+
+/* menos no ultimo item */
+/* .manual-btn:not(:last-child){ 
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background-color: white;
+} */
+
+/* posicionamento da imagem */
+/* #radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+#radio4:checked ~ .first{
+    margin-left: -75%;
+} */
+
+/* troca de imagens */
+/* .navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+.navigation-auto div {
+    border: 2px solid blue;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+} */
+
+/* deixando os botoes circulares de imagem com cor branca*/
+/* #radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: white;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: white;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: white;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: white;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
